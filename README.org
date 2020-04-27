@@ -25,14 +25,14 @@ TypeScript, this will be a gentle, and shallow introduction. You will be able to
 follow along and simply ignore the small amounts of TypeScript if you wish. 
 
 ** Goals
-*** TODO Create a [[https://reactjs.org/docs/context.html][context]] provider to hold current user permissions (ex. [[https://reacttraining.com/react-router/web/api/Router][Router]])
-*** TODO Create a hook to use our context (ex. [[https://reacttraining.com/react-router/web/api/Hooks/uselocation][useLocation]])
-*** TODO Create a component (~Can~) that conditionally renders its children based on permissions given as props (ex. [[https://reacttraining.com/react-router/web/api/Route][Route]])
-*** TODO Create a component that renders the first matching `Can` (ex. [[https://reacttraining.com/react-router/web/api/Switch][Switch]])
-*** TODO Learn enough TypeScript to be dangerous
+   - [ ] Create a [[https://reactjs.org/docs/context.html][context]] provider to hold current user permissions (ex. [[https://reacttraining.com/react-router/web/api/Router][Router]])
+   - [ ] Create a hook to use our context (ex. [[https://reacttraining.com/react-router/web/api/Hooks/uselocation][useLocation]])
+   - [ ] Create a component (~Can~) that conditionally renders its children based on permissions given as props (ex. [[https://reacttraining.com/react-router/web/api/Route][Route]])
+   - [ ] Create a component that renders the first matching ~Can~ (ex. [[https://reacttraining.com/react-router/web/api/Switch][Switch]])
+   - [ ] Learn enough TypeScript to be dangerous
 
 ** Stretch Goals
-*** TODO Write a ~PrivateRoute~ component that combines permissions with routing 
-*** TODO Integrate with an actual authentication system, like Auth0, Firebase, or Okta.
-*** TODO Write a ~Switch~ capable of checking both the route and permissions match.
-*** TODO Extend ~Can~ to work with roles, authenticated states, or whatever else your application needs
+   - [ ] Write a ~PrivateRoute~ component that combines permissions with routing 
+   - [ ] Integrate with an actual authentication system, like Auth0, Firebase, or Okta.
+   - [ ] Write a ~Switch~ capable of checking both the route and permissions match.
+   - [ ] Extend ~Can~ to work with roles, authenticated states, or whatever else your application needs
