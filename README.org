@@ -1,0 +1,38 @@
+* React Permissions
+  
+#+begin_src
+  <PermissionsSwitch>
+    <Can permissions="user:read">
+      <button>
+        Load history
+      </button>
+    </Can>
+    <Can permissions={["user:write", "user:admin"]}>
+      <button>
+        Modify history
+      </button>
+    </Can>
+  </PermissionsSwitch>
+#+end_src
+
+Have you ever needed users to see different things based on their role or
+permissions? Have you ever marveled at the magic that is [[https://github.com/ReactTraining/react-router][react-router]]?
+
+Look no further, as we create permission based routing inspired by React Router!
+
+Also we are doing this in TypeScript. For those of you who are new to
+TypeScript, this will be a gentle, and shallow introduction. You will be able to
+follow along and simply ignore the small amounts of TypeScript if you wish. 
+
+** Goals
+*** TODO Create a [[https://reactjs.org/docs/context.html][context]] provider to hold current user permissions (ex. [[https://reacttraining.com/react-router/web/api/Router][Router]])
+*** TODO Create a hook to use our context (ex. [[https://reacttraining.com/react-router/web/api/Hooks/uselocation][useLocation]])
+*** TODO Create a component (~Can~) that conditionally renders its children based on permissions given as props (ex. [[https://reacttraining.com/react-router/web/api/Route][Route]])
+*** TODO Create a component that renders the first matching `Can` (ex. [[https://reacttraining.com/react-router/web/api/Switch][Switch]])
+*** TODO Learn enough TypeScript to be dangerous
+
+** Stretch Goals
+*** TODO Write a ~PrivateRoute~ component that combines permissions with routing 
+*** TODO Integrate with an actual authentication system, like Auth0, Firebase, or Okta.
+*** TODO Write a ~Switch~ capable of checking both the route and permissions match.
+*** TODO Extend ~Can~ to work with roles, authenticated states, or whatever else your application needs

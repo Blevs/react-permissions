@@ -1,0 +1,25 @@
+.button {
+  appearance: none;
+  padding: .75rem 1.5rem;
+  border: none;
+  outline: none;
+  color: #fafafa;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+
+}
+
+.normal {
+  background: #66814F;
+  &:hover {
+    background: darken(#66814F, 10%);
+  }
+}
+
+.danger {
+  background: red;
+  &:hover {
+    background: darken(red, 10%);
+  }
+}

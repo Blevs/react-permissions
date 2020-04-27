@@ -1,0 +1,26 @@
+.container {
+  padding: 2rem;
+  margin: 0 2rem;
+  box-sizing: border-box;
+  border-radius: .75rem;
+  border: 1px solid #515151;
+  max-width: 35rem;
+  width: 100%;
+  background: #fafafa;
+}
+
+.posts {
+  padding: 0;
+}
+
+.post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #dfdfdf;
+  border-bottom: none;
+  &:last-child {
+    border-bottom: 1px solid #dfdfdf;
+  }
+}
