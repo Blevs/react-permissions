@@ -1,19 +1,20 @@
 import React, { useState } from 'react';
 import styles from './Login.module.scss';
 import Button from 'components/Button';
-import { usePermissions } from 'Permissions';
 
 const Login = () => {
-  const { login } = usePermissions();
   const [email, setEmail] = useState('');
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    // TODO
+    // login(email);
+  }
+
   return (
     <div className={styles.container}>
       <form
         className={styles.form}
-        onSubmit={e => {
-          e.preventDefault();
-          login(email);
-        }}
+        onSubmit={handleSubmit}
       >
         <h1>Login</h1>
         <input

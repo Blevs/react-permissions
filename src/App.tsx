@@ -10,6 +10,7 @@ function App() {
       <Switch>
         <Route path="/login" component={Login} />
         <Route>
+          {/* Did you know you can render children with Route???? */}
           <Manager />
         </Route>
       </Switch>
