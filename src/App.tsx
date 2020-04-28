@@ -8,9 +8,8 @@ function App() {
   return (
     <div className={styles.root}>
       <Switch>
-        <Route path="/login" component={Login} />
+        <Route path={["/login", "/sign-up"]} component={Login} />
         <Route>
-          {/* Did you know you can render children with Route???? */}
           <Manager />
         </Route>
       </Switch>
